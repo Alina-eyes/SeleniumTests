@@ -37,6 +37,8 @@ public class SeleniumFormFill extends BaseClass {
         for (var testData: listOfNames) {
             testTheForm(testData);
         }
+
+        driver.quit();
     }
     public static void testTheForm(TestData testData) throws Exception {
         driver.manage().window().maximize();
